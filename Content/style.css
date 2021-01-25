@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --width-layout: 1000px;
+}
+
+.layout{
+    width: var(--width-layout);
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*
+    container-top
+*/
+.container-top{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex; 
+    display: flex; 
+    
+}
+.container-top div{
+    display: -webkit-flex; 
+    display: flex; 
+}
+.top-menu{
+    display: -webkit-flex; 
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center
+}
+.top-menu:first-child{
+}
+.top-menu li{
+    list-style-type: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+.top-menu li:hover{
+    color: #585555;
+}
