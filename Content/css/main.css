@@ -1,0 +1,489 @@
+/*
+1vw = 19.2px
+1vh = 10.8px
+*/
+
+@import "media.css" screen;
+:root {
+    --main-text-color: #6c6c6c;
+    --main-color: #45aaf2;
+    --default-padding: 4.3vw;
+    --main-font-regular: PtSansRegular;
+    --main-font-bold: PtSansBold;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font-regular);
+}
+
+header {
+    display: flex;
+}
+
+article h2 {
+    text-align: left;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.snack {
+    padding: 0 var(--default-padding);
+    background: transparent;
+    border-left: var(--default-padding) solid transparent;
+    border-right: var(--default-padding) solid transparent;
+}
+
+#top-menu {
+    position: fixed;
+    z-index: 999999999;
+    width: 100%;
+    background: rgba(252, 252, 252, 0.9);
+    transition: all ease 1s;
+}
+
+#top-menu nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background: transparent;
+    z-index: 9999;
+}
+
+#top-menu li {
+    list-style: none;
+    padding: 10px;
+    color: var(--main-text-color);
+    z-index: 9999;
+    background: transparent;
+}
+
+.container-top-social {
+    display: flex;
+    align-items: center;
+    z-index: 9999999999;
+    transition: all ease 1s;
+}
+
+.container-top-social a {
+    margin: 0 0.5vw;
+    color: var(--main-color);
+    transition: all ease 1s;
+}
+
+#content{
+  padding-top: 50px;
+}
+
+.container-top-social i {
+    margin: 10px 15px;
+    padding: 10px;
+    color: var(--main-text-color);
+}
+
+.container-top-social a:hover {
+    color: var(--main-text-color)
+}
+
+.underline-top-menu {
+    background: green;
+    height: 10px;
+    width: 20px;
+}
+
+#particles-js {
+    /* вы можете ставить любую высоту и ширину блока */
+    width: 100%;
+    height: 100%;
+    background-color: #3a3e47;
+    /* цвет фона блока в котором находится анимация частиц*/
+}
+
+#contarner {
+    height: 50vh;
+    background: #fff;
+    margin: 0;
+}
+
+.vorschau {
+    overflow: hidden;
+}
+
+.vorschau footer {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+}
+
+.parallelogram {
+    width: 20px;
+    height: 10px;
+    margin-right: 3px;
+    background: var(--main-color);
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+}
+
+.next-card {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow div:nth-child(1) {
+    width: 30px;
+    height: 10px;
+    height: 0;
+    border-bottom: 10px solid #273238;
+    border-left: 5px solid transparent;
+    border-right: 0 solid #273238;
+}
+
+.arrow div:nth-child(2) {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #273238;
+    border-bottom: 20px solid transparent;
+    align-items: center;
+}
+
+.rectangle {
+    position: absolute;
+    top: 0;
+    border-top: 27vh solid transparent;
+    border-bottom: 27vh solid transparent;
+    border-left: 50vw solid #fff;
+    z-index: 1;
+}
+
+.rectangle-2 {
+    position: absolute;
+    top: 0;
+    left: 15vh;
+    border-top: 27vh solid transparent;
+    border-bottom: 13vh solid transparent;
+    border-left: 35vh solid #fff;
+    z-index: 1;
+}
+
+.rectangle-svg {
+    position: absolute;
+    top: 0;
+    z-index: 99999999;
+}
+
+.shadow {
+    background: #000000;
+    backdrop-filter: blur(5px);
+}
+
+.rectangle-black {
+    position: absolute;
+    top: -0.5vh;
+    border-top: 27.3vh solid transparent;
+    border-bottom: 28vh solid transparent;
+    border-left: 50vw solid #000000;
+    opacity: 0.1;
+    filter: blur(10px);
+}
+
+.intro {
+    position: absolute;
+    top: 17vh;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    z-index: 2;
+    position: absolute;
+    color: var(--main-text-color);
+    transition: all ease 1s;
+}
+
+.intro h1 {
+    font-family: PtSansRegular;
+    font-weight: bold;
+    width: 16vmax;
+    margin: 0;
+}
+
+.intro li {
+    list-style: none;
+    font-family: PtSansRegular;
+    margin: 0;
+    text-align: left;
+}
+
+.intro li::before {
+    content: "•";
+    color: var(--main-color);
+    padding-right: 15px;
+}
+
+
+/*
+*
+*
+*   wave
+*
+*
+*/
+
+.advantages {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: var(--main-color);
+    margin: 0;
+    position: relative;
+    transition: all ease 1s;
+}
+
+.advantages>header {
+    display: block;
+    color: #fff;
+}
+
+.advantages>header h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    margin-bottom: -7px;
+    height: 30px;
+    min-height: 50px;
+    max-height: 150px;
+    box-shadow: 2px black;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    transition: all ease 1s;
+    text-align: center;
+}
+
+.card-block {
+    border: .5px solid #00baff;
+    display: inline-block;
+    background: rgba(0, 186, 255, .6);
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 11em;
+    width: 11em;
+    margin: 10px 3vw;
+}
+
+.card-block p {
+    color: #fff;
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-block>img,
+.number-card>img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    background-color: #fff;
+    position: relative;
+    z-index: 99;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.principle-operation {
+    background: repeating-linear-gradient(-50deg, #f4f5f8, #f0f1f4 10px, #f4f5f8 20px);
+    margin: 0;
+    position: relative;
+}
+
+article header h2 {
+    width: 100%;
+}
+
+article header h2 span {
+    color: var(--main-color);
+}
+
+.number-card {
+    margin: 10px 15px;
+    max-width: 278px;
+}
+
+.number-card span {
+    color: var(--main-color);
+    font-size: 32px;
+}
+
+.number-card p:nth-child(3) {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.number-card p:nth-child(4) {
+    margin: 0;
+    font-size: 16px;
+}
+
+#top-menu-js .links {
+    display: flex;
+}
+
+#top-menu-js a {
+    padding: 10px 15px;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+#top-menu-js-underline {
+    width: 100%;
+    height: 10px;
+    z-index: 99999;
+    margin-left: 0px;
+}
+
+.top-menu-non-home {
+    box-shadow: 0 0px 9px -2px #000000;
+    z-index: 99999999;
+}
+
+.name-page {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.name-page hr {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.news {
+    margin: 0px 0 0 0;
+}
+
+.news .card {
+    border: 1px solid silver;
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.full-news {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-top: 1px solid silver;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.full-news:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#top-menu-js a {
+    transition: all ease 1s;
+}
+
+#top-menu-js a:hover {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.it-is-page {
+    border-bottom: 1px solid var(--main-color);
+}
+
+body footer {
+    back
+}
+.alert{
+  display: none;
+}
+
+
+
+/*
+*
+*
+* Форма авторизации
+*
+*
+*/
+form{
+  min-width: 300px
+}
+form input{
+  margin-top: 15px;
+}
+form .label-error{
+  margin-bottom: 8px;
+  color: #ff7979;
+  padding-left: 5px;
+
+}

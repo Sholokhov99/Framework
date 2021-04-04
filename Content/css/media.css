@@ -1,0 +1,79 @@
+@media (max-width: 1200px) {
+    .snack {
+        height: auto;
+    }
+    .advantages,
+    .principle-operation,
+    .snack {
+        height: auto;
+    }
+    article h2 {
+        font-size: 3em;
+    }
+    .card-list {
+        display: block;
+        margin: 0 0;
+    }
+    .number-card {
+        margin: auto;
+    }
+    .next-card {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        width: 90px;
+        margin: 45px auto;
+    }
+    .card-block {
+        height: 20em;
+        width: 20em;
+        padding: 1px;
+        margin: 2vw;
+    }
+    .card-block p {
+        font-size: 32px;
+    }
+    .card-block>img,
+    .number-card>img {
+        width: 180px;
+        height: 180px;
+    }
+    .number-card p:nth-child(3) {
+        font-size: 2em;
+    }
+    .number-card p:nth-child(4) {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .waves {
+        height: 20px;
+        min-height: 10px;
+    }
+    .start-page-rect {
+        display: none;
+    }
+    .intro {
+        top: 25%;
+        width: 100%;
+        /*
+        background: rgba(255, 255, 0, 0.5);
+        */
+    }
+    .intro h1 {
+        display: block;
+        font-size: 5vw;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .intro li {
+        display: block;
+        text-align: center;
+        font-size: 3vw;
+        margin: 0 auto;
+    }
+}

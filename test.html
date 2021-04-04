@@ -1,0 +1,168 @@
+<article class="vorschau">
+    <script type="text/javascript" src="../../scripts/lib/particles/particles.js"></script>
+    <script type="text/javascript" src="../../scripts/lib/particles/app.js"></script>
+    <script type="text/javascript" src="../../scripts/lib/particles/stats.js"></script>
+    <div id="contarner"></div>
+    <svg class="rectangle-svg" width="50vw" height="54vh" hidden viewBox="0 0 150 100" preserveAspectRatio="none" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg">
+                <!-- Shadow -->
+        <filter id="filter">
+            <feOffset in="SourceAlpha" dx="-4" dy="0.1"></feOffset>
+            <feGaussianBlur stdDeviation="3" result="DROP"></feGaussianBlur>
+            <feFlood flood-color="#000" result="COLOR"></feFlood>
+            <feComposite in="DROP" in2="COLOR" operator="in" result="SHADOW1"></feComposite>
+            <feComponentTransfer in="SHADOW1" result="SHADOW">
+                <feFuncA type="table" tableValues="0 0.5"></feFuncA>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode in="SHADOW"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0,0 h105 l40,50 l-40,50 h-110z" fill="#fff" filter="url(#filter)" class="start-page-rect"/>
+    </svg>
+
+    <div class="intro">
+        <div class="snack">
+            <h1>Защити себя и своих близких</h1>
+            <ul>
+                <li>от бактерий</li>
+                <li>вирусов</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs >
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(69,170,242,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(69,170,242,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(69,170,242,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#45aaf2" />
+                </g>
+            </svg>
+        </div>
+    </footer>
+</article>
+
+<article class="advantages snack">
+    <header>
+        <h2>Преимущества</h2>
+    </header>
+    <div class="card-list d-flex justify-content-center">
+        <div class="card-block">
+            <img src="./app_data/img/card/lamp_icon.png">
+            <p>Дезинфекция воздуха</p>
+        </div>
+        <div class="card-block">
+            <img src="./app_data/img/card/virus_eds.png">
+            <p>Устранение вирусов</p>
+        </div>
+        <div class="card-block">
+            <img src="./app_data/img/card/24_7_eds_icon.png">
+            <p>Непрерывная работа</p>
+        </div>
+        <div class="card-block">
+            <img src="./app_data/img/card/bezop_eds_icon.png">
+            <p>Безопасность</p>
+        </div>
+    </div>
+</article>
+
+<article class="principle-operation snack">
+    <header>
+        <h2><span>П</span>ринципы работы</h2>
+    </header>
+    <div class="card-list">
+        <div class="number-card">
+            <img src="./app_data/img/vent_icon_eds.png" />
+            <span>01</span>
+            <p>Выпуск воздуха</p>
+            <p>Бактерии с вирусами перемещаются в корпус дезинфекционного блока благодаря бесшумными вентиляторами</p>
+        </div>
+        <div class="next-card">
+            <div class="parallelogram"></div>
+            <div class="arrow">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="number-card">
+            <img src="./app_data/img/uv.png" />
+            <span>02</span>
+            <p>Очистка ультрафиолетом</p>
+            <p>Бактерии с вирусами перемещаются в корпус дезинфекционного блока благодаря бесшумными вентиляторами</p>
+        </div>
+        <div class="next-card">
+            <div class="parallelogram"></div>
+            <div class="arrow">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="number-card">
+            <img src="./app_data/img/clear_icon_eds.png" />
+            <span>03</span>
+            <p>Выпуск воздуха</p>
+            <p>Очищенный воздух поступает через отверстия циркуляции воздушного потока, размещенные на безопасном расстоянии от человека</p>
+        </div>
+    </div>
+</article>
+
+<article>
+    <header>
+        <h2><span>П</span>рименение</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="align-middle text-wrap">
+                    Рециркулятор бактерицидный предназначен для обеззараживания воздуха в присутствии людей в помещениях учебного заведения, бизнес центров, общественного питания, предприятий и жилых помещений.
+                </span>
+            </div>
+            <!-- Slider-->
+            <div class="col">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "PtSansRegular";
+    src: url("../fonts/PTSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PtSansBold";
+    src: url("../fonts/PTSans-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
