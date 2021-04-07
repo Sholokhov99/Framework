@@ -463,7 +463,9 @@ body footer {
     back
 }
 .alert{
+  text-align: center;
   display: none;
+  transition: all ease 1s;
 }
 
 
@@ -476,14 +478,17 @@ body footer {
 *
 */
 form{
-  min-width: 300px
+  min-width: 300px;
+  transition: all ease 1s;
 }
 form input{
   margin-top: 15px;
+  transition: all ease 1s;
 }
 form .label-error{
   margin-bottom: 8px;
   color: #ff7979;
   padding-left: 5px;
-
+  display: none;
+  transition: all ease 1s;
 }

@@ -23,12 +23,13 @@ class Application
 
         self::$firstStart = false;
 
+        $path = APPLICATION_ROOT_CONTROLLER.$defaultController."Controller.php";
 
-        // Проверка на существование стандартного контроллера
-        if(!file_exists(APPLICATION_ROOT_CONTROLLER.$defaultController."Controller.php"))
-                die('Default controller not found');
-
-        \Source\Route::main($defaultController);
+        if(fopen($path, 'r')){
+            \Source\Route::main($defaultController);
+        }
+        else
+            die('Default controller not found');
     }
 
 }

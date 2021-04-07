@@ -3,11 +3,11 @@
 <div  class="position-absolute top-50 start-50 translate-middle border rounded p-4 shadow-lg bg-transparent">
   <h1 class="text-center mb-3">Авторизация</h1>
     <form id="authenication-form">
-        <input type="email" class="form-control" id="auth-login" name="login" placeholder="you-mail@gmail.com">
-        <label class="label-error" id="empty-login">Введите email</label>
+        <input type="text" class="form-control" id="auth-login" name="login" placeholder="you-mail@gmail.com" />
+        <label class="label-error" id="labelEmpty0">Введите email</label>
 
-        <input type="password" class="form-control" id="inputPassword1" name="password" placeholder="Password">
-        <label class="label-error" id="empty-password">Не отвечает правилам</label>
+        <input type="password" class="form-control" id="auth-password" name="password" placeholder="Password">
+        <label class="label-error" id="labelEmpty1">Не отвечает правилам</label>
 
         <div class="d-flex flex-row mt-3">
           <div class="flex-grow-1">

@@ -4,6 +4,9 @@ ini_set('display_errors', 'Off');
 ini_set('session.gc_maxlifetime', 172800);
 ini_set('session.cookie_lifetime', 172800);
 
+$protocol = 'https://';
+$uri = 'recirculator-rf.000webhostapp.com';
+$url = $protocol.$uri;
 
 $GLOBALS['load_content'] = true;
 //
